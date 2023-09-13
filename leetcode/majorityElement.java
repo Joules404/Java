@@ -7,7 +7,7 @@ public class majorityElement{
         /*this works well with when dealing with memory space however it is not the best with speed*/
         /*does work on leetcode */
     }
-    public int majorityElement(int[] nums) {
+    public static int majorityElement(int[] nums) {
         if(nums.length == 1) return nums[0]; //only case that doesn't work with hash
         HashMap<Integer,Integer> hm = new HashMap<>();
         int half = nums.length/2;
