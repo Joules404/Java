@@ -22,8 +22,8 @@ class circulararray {
         //value: 1 2 1 4 5 6 7 (will have other array matching og)
         //int curr = nums[0]; //have 1
     public static void rotate(int[] nums,int k){
-        int[] nums_copy = new int[nums.length];
-        for(int i = 0; i < nums.length; i++) nums_copy[i] = nums[i];
+        int[] nums_copy = nums.clone();
+        //for(int i = 0; i < nums.length; i++) nums_copy[i] = nums[i];
         for(int i = 0; i < nums.length; i++){
             nums[(i+k)%nums.length] = nums_copy[i]; ///6+2
         }
