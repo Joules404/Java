@@ -10,10 +10,10 @@ public class firstlastsa{
 
     static int[] searchRange(int[] nums, int target){
         int ret[] = {-1,-1};
-        int start = inner(nums,target,true);
-        int end = inner(nums,target,false);
-        ret[0] = start;
-        ret[1] = end;
+        ret[0] = inner(nums,target,true);
+        if(ret[0] != -1){
+            ret[1] = inner(nums,target,false);
+        }
         return ret;
     }
     static int inner(int[] nums, int target, boolean startIndex){
