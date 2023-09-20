@@ -3,12 +3,12 @@
     public static void main(String[] args) {
         int[] nums = {2,3,5,9,14,16,17,18};
         int[] nums1 = {1,3,5,6};
-        System.out.println(ceiling(nums,6));
-        System.out.println(ceiling(nums1,7));
+        System.out.println(roof(nums,6));
+        System.out.println(roof(nums1,7));
         System.out.println(searchInsert(nums,6));
         System.out.println(searchInsert(nums1,7));
     }
-    public static int ceiling(int[] nums, int target){
+    public static int roof(int[] nums, int target){
         int left = 0;
         int right = nums.length-1;
         while(left <= right){
